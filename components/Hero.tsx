@@ -37,12 +37,17 @@ function Buttons({ center }: { center?: boolean }) {
       >
         <MailIcon className="h-4 w-4" /> Get in touch
       </a>
-      <a
-        href={profile.resumeUrl}
-        className="inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-[--color-muted] transition-colors hover:text-[--color-text]"
-      >
-        <DownloadIcon className="h-4 w-4" /> Resume
-      </a>
+      {profile.resumeUrl && (
+        <a
+          href={profile.resumeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+          className="inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-[--color-muted] transition-colors hover:text-[--color-text]"
+        >
+          <DownloadIcon className="h-4 w-4" /> Resume
+        </a>
+      )}
     </div>
   );
 }

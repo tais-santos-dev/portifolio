@@ -16,10 +16,13 @@ export const profile = {
   available: true, // shows the status badge below
   availableText: "Open to connect",
   email: "tais.santos.dev@gmail.com",
-  resumeUrl: "/resume.pdf", // put your PDF in /public/resume.pdf
+  // To enable the Resume button, drop your PDF at /public/resume.pdf and keep this path.
+  // Leave it as "" to hide the button entirely.
+  resumeUrl: "/resume.pdf",
   social: {
     github: "https://github.com/tais-santos-dev",
     linkedin: "https://www.linkedin.com/in/ta%C3%ADs-santos-3202931b1",
+    whatsapp: "https://wa.me/5515997817243", // +55 15 99781-7243
   },
   // 2–4 short paragraphs about you, written for international recruiters.
   about: [

@@ -1,5 +1,5 @@
 import { profile } from "@/lib/content";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "./icons";
+import { GitHubIcon, LinkedInIcon, MailIcon, WhatsAppIcon } from "./icons";
 
 export default function Contact() {
   return (
@@ -19,6 +19,14 @@ export default function Contact() {
         >
           <MailIcon className="h-4 w-4 shrink-0" />
           <span className="break-all">{profile.email}</span>
+        </a>
+        <a
+          href={profile.social.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#25D366]/40 px-5 py-2.5 text-sm font-semibold text-[#25D366] transition-colors hover:bg-[#25D366]/10"
+        >
+          <WhatsAppIcon className="h-4 w-4" /> WhatsApp
         </a>
         <a
           href={profile.social.linkedin}
