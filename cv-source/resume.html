@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Taís Santos — Resume</title>
+<style>
+  :root {
+    --accent: #7c3aed;
+    --accent-light: #a78bfa;
+    --accent-soft: #f5f3ff;
+    --accent-border: #e4ddff;
+    --ink: #1f2430;
+    --muted: #5b6170;
+  }
+
+  @page {
+    size: A4;
+    margin: 11mm 0 10mm 0;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    color: var(--ink);
+    font-family: "Helvetica Neue", Arial, "Segoe UI", system-ui, sans-serif;
+    font-size: 9.5px;
+    line-height: 1.4;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page { padding: 0 15mm; }
+
+  /* Header */
+  header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 9px;
+    margin-bottom: 11px;
+  }
+  .name {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    color: var(--ink);
+    margin: 0;
+  }
+  .name span { color: var(--accent); }
+  .title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 3px 0 7px;
+    letter-spacing: 0.2px;
+  }
+  .contact {
+    font-size: 9px;
+    color: var(--muted);
+  }
+  .contact b { color: var(--ink); font-weight: 600; }
+  .contact .sep { color: var(--accent-light); margin: 0 5px; }
+
+  /* Sections */
+  section { margin-bottom: 10px; break-inside: avoid; }
+  h2 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: var(--accent);
+    font-weight: 700;
+    margin: 0 0 6px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--accent-border);
+  }
+
+  p.summary { margin: 0; text-align: justify; }
+
+  /* Skills */
+  .skill-row { margin-bottom: 3px; }
+  .skill-row .k {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* Experience */
+  section.experience { break-inside: auto; }
+  .job { margin-bottom: 9px; break-inside: avoid; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .role { font-weight: 700; font-size: 11px; color: var(--ink); }
+  .dates {
+    font-weight: 600;
+    font-size: 9px;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .company {
+    font-size: 9.3px;
+    color: var(--muted);
+    font-style: italic;
+    margin: 1px 0 4px;
+  }
+  ul { margin: 0; padding: 0; list-style: none; }
+  li {
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 2.5px;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: var(--accent-light);
+  }
+
+  /* Chips for certs/langs */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 18px;
+    break-inside: avoid;
+  }
+  .edu-line { font-weight: 700; color: var(--ink); }
+  .edu-sub { color: var(--muted); }
+  .lang b { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1 class="name">Taís Santos <span>Silva</span></h1>
+    <div class="title">Software Development Engineer in Test (SDET) · QA Automation Engineer</div>
+    <div class="contact">
+      <b>Open to Remote Worldwide</b><span class="sep">•</span>tais.santos.dev@gmail.com<span class="sep">•</span>+55 15 99781-7243<span class="sep">•</span>linkedin.com/in/taís-santos<span class="sep">•</span>github.com/tais-santos-dev
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary">QA Automation Engineer / SDET with 5+ years of experience designing and scaling test automation frameworks for web, mobile, and API platforms. I build quality into modern products end to end and choose the right framework for each problem rather than relying on a single tool, with strong expertise in Page Object Model architecture, CI/CD-integrated testing, and AI-assisted quality engineering. Experienced in testing LLM-powered applications and AI agents, including evaluation frameworks, prompt regression, output validation, and non-deterministic test strategies. Proven track record reducing regression cycles by 60%+ and increasing critical-path coverage in fast-paced agile teams. ISTQB CTFL certified. Professional working proficiency in English with experience in distributed, English-speaking teams.</p>
+  </section>
+
+  <section>
+    <h2>Core Technical Skills</h2>
+    <div class="skill-row"><span class="k">Test Automation:</span> Playwright, Cypress, Detox, Appium, TypeScript, JavaScript, Python, Page Object Model (POM), BDD, framework design</div>
+    <div class="skill-row"><span class="k">API Testing:</span> Postman, REST, JSON Schema validation, contract testing</div>
+    <div class="skill-row"><span class="k">Performance:</span> JMeter, load testing, response-time analysis, Core Web Vitals</div>
+    <div class="skill-row"><span class="k">Mobile &amp; Cross-Platform:</span> iOS, Android, responsive web testing</div>
+    <div class="skill-row"><span class="k">Databases &amp; DevOps:</span> MySQL, SQL, DBeaver, MySQL Workbench, Git, GitHub, GitLab, Azure DevOps, Docker, CI/CD pipelines</div>
+    <div class="skill-row"><span class="k">AI-Assisted QA:</span> LLM-driven test case generation, automated log analysis, AI agents for test execution and triage</div>
+    <div class="skill-row"><span class="k">LLM &amp; AI Agent Testing:</span> evaluation frameworks (LLM-as-a-judge), prompt regression, hallucination detection, output schema validation, agent trajectory testing, non-deterministic system QA, RAG pipeline validation</div>
+    <div class="skill-row"><span class="k">Methodologies:</span> Scrum, Kanban, Risk-based Testing, Continuous Testing, Shift-Left Quality</div>
+  </section>
+
+  <section class="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role">QA Automation Engineer / SDET</span>
+        <span class="dates">Sep 2021 – Present</span>
+      </div>
+      <div class="company">Conexa Saúde — Healthtech (Telemedicine Platform), Brazil</div>
+      <ul>
+        <li>Designed and maintained a scalable end-to-end automation framework using Playwright + TypeScript with Page Object Model architecture, reducing test maintenance time by ~40%.</li>
+        <li>Increased automated regression coverage of critical user journeys from ~30% to ~80%, cutting full regression cycle time from days to hours.</li>
+        <li>Built reusable API test suites in Postman and Playwright, validating REST contracts and integrating tests into CI pipelines for early defect detection.</li>
+        <li>Caught an estimated 70%+ of critical defects pre-production, significantly reducing customer-facing incidents in healthcare-grade releases.</li>
+        <li>Pioneered AI-assisted QA workflows: leveraged generative AI to accelerate test case creation, generate synthetic test data, and triage failed test logs, reducing manual scripting effort by 50%+.</li>
+        <li>Designed quality strategies for LLM-powered features and AI agents, including evaluation frameworks, prompt regression suites, output schema validation, hallucination detection, and behavioral testing for non-deterministic systems.</li>
+        <li>Led test strategy and risk-based planning for new features, partnering with developers, product managers, and designers from refinement through production validation.</li>
+        <li>Executed cross-platform testing across web, iOS, and Android, ensuring consistent UX and feature parity.</li>
+        <li>Mentored team members on automation best practices, BDD modeling, and quality engineering principles.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="role">QA Analyst</span>
+        <span class="dates">Feb 2021 – Sep 2021</span>
+      </div>
+      <div class="company">D&amp;D Tech Solutions — Client: Solar Coca-Cola, Brazil</div>
+      <ul>
+        <li>Owned QA delivery across multiple parallel squads for Solar Coca-Cola, ensuring on-time, defect-free releases for enterprise-grade applications.</li>
+        <li>Led full SDLC quality activities, including requirements review, test planning, functional and non-functional testing, regression, and production validation.</li>
+        <li>Designed structured test scenarios, test cases, and traceability documentation aligned with acceptance criteria and business rules.</li>
+        <li>Identified and tracked defects through Azure DevOps, collaborating with developers to drive resolution and root-cause analysis.</li>
+        <li>Mentored junior QA analysts, established quality standards, and championed best practices across teams.</li>
+        <li>Presented feature demos and test results to stakeholders and client leadership, ensuring alignment and transparency.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Certifications &amp; Learning</h2>
+      <ul>
+        <li><b>ISTQB Certified Tester, Foundation Level (CTFL)</b></li>
+        <li>Playwright Test Automation — QAzando</li>
+        <li>Cypress Test Automation — QA Academy</li>
+        <li>Performance &amp; Load Testing with JMeter — Udemy</li>
+        <li>JavaScript for Testers — QAzando</li>
+        <li>Full Stack Developer Program — Instituto Master</li>
+        <li>Front-end Development — in progress (private mentorship)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education &amp; Languages</h2>
+      <div class="edu-line">B.Sc. Analysis &amp; Systems Development</div>
+      <div class="edu-sub">Universidade Cidade de São Paulo · Completed</div>
+      <div style="height:8px"></div>
+      <div class="lang"><b>Portuguese:</b> Native</div>
+      <div class="lang"><b>English:</b> Professional Working Proficiency</div>
+    </section>
+  </div>
+
+</div>
+</body>
+</html>
