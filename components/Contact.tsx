@@ -3,7 +3,8 @@ import { GitHubIcon, LinkedInIcon, MailIcon } from "./icons";
 
 export default function Contact() {
   return (
-    <div className="rounded-2xl border border-[--color-border] bg-[--color-surface] p-6 text-center sm:p-8 md:p-12">
+    <div className="relative overflow-hidden rounded-2xl border border-[--color-accent]/20 bg-gradient-to-br from-[--color-surface] via-[--color-surface] to-[--color-accent]/10 p-6 text-center sm:p-8 md:p-12">
+      <div className="pointer-events-none absolute -top-20 left-1/2 h-56 w-[28rem] -translate-x-1/2 rounded-full bg-[--color-accent]/15 blur-3xl" aria-hidden />
       <h3 className="text-2xl font-bold tracking-tight md:text-3xl">
         Let&apos;s work together
       </h3>
@@ -14,7 +15,7 @@ export default function Contact() {
       <div className="mt-7 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <a
           href={`mailto:${profile.email}`}
-          className="inline-flex items-center justify-center gap-2 rounded-lg bg-[--color-accent] px-5 py-2.5 text-sm font-semibold text-[#1a0b2e] transition-transform hover:scale-[1.03]"
+          className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[--color-accent] to-[--color-accent-2] px-5 py-2.5 text-sm font-semibold text-[#1a0b2e] shadow-lg shadow-[--color-accent]/25 transition-all hover:scale-[1.03] hover:shadow-xl hover:shadow-[--color-accent]/40"
         >
           <MailIcon className="h-4 w-4 shrink-0" />
           <span className="break-all">{profile.email}</span>

@@ -1,11 +1,23 @@
 import { profile } from "@/lib/content";
 import { ArrowIcon, DownloadIcon, MailIcon } from "./icons";
+import Avatar from "./Avatar";
 
 export default function Hero() {
   return (
     <section id="top" className="dot-grid relative overflow-hidden">
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-80 w-[40rem] -translate-x-1/2 rounded-full bg-[--color-accent]/10 blur-3xl" />
-      <div className="mx-auto max-w-5xl px-5 py-20 sm:px-6 sm:py-24 md:py-32">
+      {/* Animated purple blobs */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        <div className="blob absolute -top-32 left-1/4 h-80 w-80 rounded-full bg-[--color-accent]/20 blur-3xl" />
+        <div className="blob absolute -top-10 right-10 h-72 w-72 rounded-full bg-[--color-accent-3]/20 blur-3xl" style={{ animationDelay: "-5s" }} />
+        <div className="blob absolute top-40 left-1/2 h-64 w-64 rounded-full bg-[--color-accent-2]/15 blur-3xl" style={{ animationDelay: "-9s" }} />
+      </div>
+
+      <div className="relative mx-auto max-w-5xl px-5 py-20 sm:px-6 sm:py-24 md:py-32">
+        {profile.photo && (
+          <div className="hero-in mb-7">
+            <Avatar src={profile.photo} name={profile.name} />
+          </div>
+        )}
         {profile.available && (
           <span className="hero-in mb-6 inline-flex items-center gap-2 rounded-full border border-[--color-accent]/30 bg-[--color-accent]/10 px-3 py-1 text-xs font-medium text-[--color-accent]">
             <span className="relative flex h-2 w-2">
@@ -32,9 +44,9 @@ export default function Hero() {
         <div className="hero-in mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center" style={{ animationDelay: "400ms" }}>
           <a
             href="#projects"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[--color-accent] px-5 py-2.5 text-sm font-semibold text-[#1a0b2e] transition-transform hover:scale-[1.03]"
+            className="group inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[--color-accent] to-[--color-accent-2] px-5 py-2.5 text-sm font-semibold text-[#1a0b2e] shadow-lg shadow-[--color-accent]/25 transition-all hover:scale-[1.03] hover:shadow-xl hover:shadow-[--color-accent]/40"
           >
-            View my work <ArrowIcon className="h-4 w-4" />
+            View my work <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <a
             href={`mailto:${profile.email}`}

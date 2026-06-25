@@ -6,7 +6,7 @@ export default function Skills() {
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {skills.map((group, i) => (
         <Reveal key={group.name} delay={(i % 3) * 80} className="h-full">
-          <div className="h-full rounded-xl border border-[--color-border] bg-[--color-surface] p-5 transition-colors duration-300 hover:border-[--color-accent]/40">
+          <div className="gradient-border group h-full rounded-xl border border-[--color-border] bg-[--color-surface] p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[--color-accent]/40">
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-[--color-accent]">
               {group.name}
             </h3>
