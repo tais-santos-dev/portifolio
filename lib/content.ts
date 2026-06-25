@@ -11,7 +11,7 @@ export const profile = {
   photo: "/profile.jpeg",
   role: "Software Development Engineer in Test (SDET)",
   tagline:
-    "I design and evolve scalable test automation frameworks in Playwright and TypeScript that deliver reliable, maintainable validation aligned with real user scenarios, powered by AI-assisted workflows.",
+    "I build quality engineering into modern web, mobile, and API products, designing test automation and CI/CD pipelines with the right tools for each stack, plus AI-assisted workflows that help teams ship faster and safer.",
   location: "Open to remote",
   available: true, // shows the status badge below
   availableText: "Open to connect",
@@ -26,10 +26,10 @@ export const profile = {
   },
   // 2–4 short paragraphs about you, written for international recruiters.
   about: [
-    "I'm a Software Development Engineer in Test (SDET) with experience designing, developing, and evolving scalable test automation frameworks using Playwright and TypeScript, ensuring reliable, maintainable, and high-quality validation aligned with real user scenarios.",
-    "My experience spans end-to-end testing, API validation, and mobile testing, with active participation throughout the Software Development Lifecycle (SDLC), from requirements analysis and test strategy definition to production validation and monitoring.",
-    "I collaborate closely with developers, product managers, and cross-functional teams to identify risks early, improve software quality, and accelerate delivery through automation, continuous testing, and quality engineering practices.",
-    "I also leverage AI-assisted workflows and intelligent agents to optimize quality processes such as test case generation, test data creation, failure analysis, root cause investigation, and automation development support. I'm ISTQB CTFL certified and fluent in English and Portuguese.",
+    "I'm a Software Development Engineer in Test (SDET) who builds quality into modern products end to end. I'm comfortable across the stack and pick the right framework for each problem (Playwright, Cypress, Detox, Appium, REST and contract testing) instead of betting on a single tool.",
+    "My work spans end-to-end, API, and mobile testing, plus performance, accessibility, and security, with active participation throughout the Software Development Lifecycle (SDLC), from test strategy to production validation and monitoring.",
+    "I'm polyglot across TypeScript, JavaScript, and Python, and I wire automation into CI/CD (GitHub Actions, Azure DevOps) with Docker, quality gates, and static analysis so feedback stays fast and reliable.",
+    "I also leverage AI-assisted workflows and intelligent agents to accelerate test generation, data creation, failure analysis, and root cause investigation. I'm ISTQB CTFL certified and fluent in English and Portuguese.",
   ],
 };
 
@@ -37,8 +37,8 @@ export type Skill = { name: string; items: string[] };
 
 export const skills: Skill[] = [
   {
-    name: "Test Automation",
-    items: ["Playwright", "Cypress", "Detox", "TypeScript", "JavaScript", "Python"],
+    name: "Test Automation & Frameworks",
+    items: ["Framework design", "Playwright", "Cypress", "Detox", "Appium", "TypeScript", "JavaScript", "Python"],
   },
   {
     name: "API & Data",
