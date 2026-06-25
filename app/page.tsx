@@ -1,6 +1,6 @@
 import HomeShell from "@/components/HomeShell";
 
-// Hero layout. Options: "card" | "side" | "centered".
+// Hero layout. Options: "side" | "card" | "centered".
 export default function Home() {
-  return <HomeShell heroVariant="card" />;
+  return <HomeShell heroVariant="side" />;
 }
