@@ -8,7 +8,7 @@ export const profile = {
   name: "Taís Santos",
   // Your photo: save the image as /public/profile.jpg (or .png) and keep this path.
   // If the file is missing, the site shows your initials instead — no broken image.
-  photo: "/profile.jpg",
+  photo: "/profile.jpeg",
   role: "Software Development Engineer in Test (SDET)",
   tagline:
     "I design and evolve scalable test automation frameworks in Playwright and TypeScript that deliver reliable, maintainable validation aligned with real user scenarios, powered by AI-assisted workflows.",
