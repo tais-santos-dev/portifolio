@@ -13,8 +13,7 @@ export default function Section({ id, title, kicker, children }: SectionProps) {
       <Reveal>
         <div className="mb-10">
           {kicker && (
-            <p className="mb-2 flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-[--color-accent]">
-              <span className="inline-block h-px w-8 bg-gradient-to-r from-[--color-accent] to-transparent" />
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-[--color-accent]">
               {kicker}
             </p>
           )}
