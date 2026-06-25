@@ -16,9 +16,9 @@ export const profile = {
   available: true, // shows the status badge below
   availableText: "Open to connect",
   email: "tais.santos.dev@gmail.com",
-  // To enable the Resume button, drop your PDF at /public/resume.pdf and keep this path.
+  // Resume file lives in /public. PDF is recommended for recruiters; .docx works too.
   // Leave it as "" to hide the button entirely.
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/resume.docx",
   social: {
     github: "https://github.com/tais-santos-dev",
     linkedin: "https://www.linkedin.com/in/ta%C3%ADs-santos-3202931b1",
