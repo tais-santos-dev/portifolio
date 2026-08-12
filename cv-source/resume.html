@@ -26,7 +26,7 @@
     color: var(--ink);
     font-family: "Helvetica Neue", Arial, "Segoe UI", system-ui, sans-serif;
     font-size: 9.5px;
-    line-height: 1.4;
+    line-height: 1.36;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -110,7 +110,7 @@
   li {
     position: relative;
     padding-left: 13px;
-    margin-bottom: 2.5px;
+    margin-bottom: 2px;
   }
   li::before {
     content: "";
@@ -148,15 +148,15 @@
 
   <section>
     <h2>Professional Summary</h2>
-    <p class="summary">QA Automation Engineer / SDET with 5+ years of experience designing and scaling test automation frameworks for web, mobile, and API platforms. I build quality into modern products end to end and choose the right framework for each problem rather than relying on a single tool, with strong expertise in Page Object Model architecture, CI/CD-integrated testing, and AI-assisted quality engineering. Experienced in testing LLM-powered applications and AI agents, including evaluation frameworks, prompt regression, output validation, and non-deterministic test strategies. Proven track record reducing regression cycles by 60%+ and increasing critical-path coverage in fast-paced agile teams. ISTQB CTFL certified. Professional working proficiency in English with experience in distributed, English-speaking teams.</p>
+    <p class="summary">QA Automation Engineer / SDET with 5+ years of experience designing and scaling test automation frameworks for web, mobile, and API platforms, currently driving mobile automation (Appium, Python, PyTest) for global applications at AB InBev. I build quality into modern products end to end and choose the right framework for each problem rather than relying on a single tool, with strong expertise in Page Object Model architecture, CI/CD-integrated testing, and AI-assisted quality engineering. Experienced in testing LLM-powered applications and AI agents, including evaluation frameworks, prompt regression, output validation, and non-deterministic test strategies. Proven track record reducing regression cycles by 60%+ and increasing critical-path coverage in fast-paced agile teams. ISTQB CTFL certified. Professional working proficiency in English with experience in distributed, English-speaking teams.</p>
   </section>
 
   <section>
     <h2>Core Technical Skills</h2>
-    <div class="skill-row"><span class="k">Test Automation:</span> Playwright, Cypress, Detox, Appium, TypeScript, JavaScript, Python, Page Object Model (POM), BDD, framework design</div>
+    <div class="skill-row"><span class="k">Test Automation:</span> Appium, Playwright, Selenium, Cypress, Detox, Python, PyTest, TypeScript, JavaScript, Page Object Model (POM), BDD, framework design</div>
     <div class="skill-row"><span class="k">API Testing:</span> Postman, REST, JSON Schema validation, contract testing</div>
     <div class="skill-row"><span class="k">Performance:</span> JMeter, load testing, response-time analysis, Core Web Vitals</div>
-    <div class="skill-row"><span class="k">Mobile &amp; Cross-Platform:</span> iOS, Android, responsive web testing</div>
+    <div class="skill-row"><span class="k">Mobile &amp; Cross-Platform:</span> iOS, Android, real-device and cloud device farms (LambdaTest), multi-market app configurations, responsive web testing</div>
     <div class="skill-row"><span class="k">Databases &amp; DevOps:</span> MySQL, SQL, DBeaver, MySQL Workbench, Git, GitHub, GitLab, Azure DevOps, Docker, CI/CD pipelines</div>
     <div class="skill-row"><span class="k">AI-Assisted QA:</span> LLM-driven test case generation, automated log analysis, AI agents for test execution and triage</div>
     <div class="skill-row"><span class="k">LLM &amp; AI Agent Testing:</span> evaluation frameworks (LLM-as-a-judge), prompt regression, hallucination detection, output schema validation, agent trajectory testing, non-deterministic system QA, RAG pipeline validation</div>
@@ -173,9 +173,12 @@
       </div>
       <div class="company">AB InBev — Global Beverage Company, Belgium</div>
       <ul>
-        <li>Driving mobile test automation for iOS and Android across AB InBev's global digital products.</li>
-        <li>Building maintainable end-to-end and API test coverage integrated into CI/CD pipelines.</li>
-        <li>Collaborating in a distributed, international engineering team across multiple time zones.</li>
+        <li>Design, build, and maintain mobile automated tests with Appium, Python, and PyTest, covering end-to-end user journeys across multiple markets and application configurations for AB InBev's global apps.</li>
+        <li>Own Smoke, Regression, and E2E suites executed on real devices and cloud-based device farms (LambdaTest), integrated into CI/CD pipelines for continuous feedback on every build.</li>
+        <li>Continuously improve the automation framework for stability, maintainability, and execution efficiency, reducing flaky tests through better synchronization, test data handling, and reusable screen objects.</li>
+        <li>Investigate and triage automation failures end to end, separating real product defects from flaky tests, test data gaps, and environment issues, and reporting actionable bugs to development teams.</li>
+        <li>Extend coverage to web automation with Selenium, keeping a single, consistent quality strategy across mobile and web.</li>
+        <li>Collaborate with global, cross-functional engineering teams across time zones in an English-speaking international environment.</li>
       </ul>
     </div>
 
@@ -187,13 +190,11 @@
       <div class="company">Conexa Saúde — Healthtech (Telemedicine Platform), Brazil</div>
       <ul>
         <li>Designed and maintained a scalable end-to-end automation framework using Playwright + TypeScript with Page Object Model architecture, reducing test maintenance time by ~40%.</li>
-        <li>Increased automated regression coverage of critical user journeys from ~30% to ~80%, cutting full regression cycle time from days to hours.</li>
+        <li>Increased automated regression coverage of critical user journeys from ~30% to ~80%, cutting full regression cycle time from days to hours and catching an estimated 70%+ of critical defects pre-production in healthcare-grade releases.</li>
         <li>Built reusable API test suites in Postman and Playwright, validating REST contracts and integrating tests into CI pipelines for early defect detection.</li>
-        <li>Caught an estimated 70%+ of critical defects pre-production, significantly reducing customer-facing incidents in healthcare-grade releases.</li>
         <li>Pioneered AI-assisted QA workflows: leveraged generative AI to accelerate test case creation, generate synthetic test data, and triage failed test logs, reducing manual scripting effort by 50%+.</li>
         <li>Designed quality strategies for LLM-powered features and AI agents, including evaluation frameworks, prompt regression suites, output schema validation, hallucination detection, and behavioral testing for non-deterministic systems.</li>
-        <li>Led test strategy and risk-based planning for new features, partnering with developers, product managers, and designers from refinement through production validation.</li>
-        <li>Executed cross-platform testing across web, iOS, and Android, ensuring consistent UX and feature parity.</li>
+        <li>Led test strategy and risk-based planning for new features and executed cross-platform testing across web, iOS, and Android, partnering with developers, product managers, and designers from refinement through production validation.</li>
         <li>Mentored team members on automation best practices, BDD modeling, and quality engineering principles.</li>
       </ul>
     </div>
@@ -205,12 +206,10 @@
       </div>
       <div class="company">D&amp;D Tech Solutions — Client: Solar Coca-Cola, Brazil</div>
       <ul>
-        <li>Owned QA delivery across multiple parallel squads for Solar Coca-Cola, ensuring on-time, defect-free releases for enterprise-grade applications.</li>
-        <li>Led full SDLC quality activities, including requirements review, test planning, functional and non-functional testing, regression, and production validation.</li>
+        <li>Owned QA delivery across multiple parallel squads for Solar Coca-Cola, leading full SDLC quality activities from requirements review and test planning through regression and production validation.</li>
         <li>Designed structured test scenarios, test cases, and traceability documentation aligned with acceptance criteria and business rules.</li>
         <li>Identified and tracked defects through Azure DevOps, collaborating with developers to drive resolution and root-cause analysis.</li>
-        <li>Mentored junior QA analysts, established quality standards, and championed best practices across teams.</li>
-        <li>Presented feature demos and test results to stakeholders and client leadership, ensuring alignment and transparency.</li>
+        <li>Mentored junior QA analysts and presented feature demos and test results to stakeholders and client leadership.</li>
       </ul>
     </div>
   </section>

@@ -77,8 +77,10 @@ export const experience: Experience[] = [
     period: "Jun 2026 to Present",
     location: "Belgium",
     highlights: [
-      "Driving mobile test automation for iOS and Android across AB InBev's global digital products.",
-      "Collaborating in a distributed, international engineering team.",
+      "Design, build, and maintain mobile automated tests with Appium, Python, and PyTest, covering end-to-end user journeys across multiple markets and application configurations for AB InBev's global apps.",
+      "Own Smoke, Regression, and E2E suites executed on real devices and cloud-based device farms (LambdaTest), integrated into CI/CD pipelines for continuous feedback on every build.",
+      "Continuously improve the automation framework for stability, maintainability, and execution efficiency, and triage failures to separate real product defects from flaky tests, test data gaps, and environment issues.",
+      "Extend coverage to web automation with Selenium and collaborate with global, cross-functional engineering teams across time zones. Tech: Appium, Python, PyTest, LambdaTest, Selenium, CI/CD, Git.",
     ],
   },
   {
