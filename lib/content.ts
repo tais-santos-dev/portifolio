@@ -11,7 +11,7 @@ export const profile = {
   photo: "/profile.jpeg",
   role: "Software Development Engineer in Test (SDET)",
   tagline:
-    "I build quality engineering into modern web, mobile, and API products, designing test automation and CI/CD pipelines with the right tools for each stack, plus AI-assisted workflows that help teams ship faster and safer.",
+    "With 5+ years of experience in QA, including manual and automated testing, I build quality engineering into modern web, mobile, and API products, designing test automation and CI/CD pipelines with the right tools for each stack, plus AI-assisted workflows that help teams ship faster and safer.",
   location: "Open to remote",
   available: true, // shows the status badge below
   availableText: "Open to connect",
@@ -26,7 +26,7 @@ export const profile = {
   },
   // 2–4 short paragraphs about you, written for international recruiters.
   about: [
-    "I'm a Software Development Engineer in Test (SDET) who builds quality into modern products end to end. I'm comfortable across the stack and pick the right framework for each problem (Playwright, Cypress, Detox, Appium, REST and contract testing) instead of betting on a single tool.",
+    "I'm a Software Development Engineer in Test (SDET) with 5+ years of experience in QA, including manual and automated testing, who builds quality into modern products end to end. I'm comfortable across the stack and pick the right framework for each problem (Playwright, Cypress, Detox, Appium, REST and contract testing) instead of betting on a single tool.",
     "My work spans end-to-end, API, and mobile testing, plus performance, accessibility, and security, with active participation throughout the Software Development Lifecycle (SDLC), from test strategy to production validation and monitoring.",
     "I'm polyglot across TypeScript, JavaScript, and Python, and I wire automation into CI/CD (GitHub Actions, Azure DevOps) with Docker, quality gates, and static analysis so feedback stays fast and reliable.",
     "I also leverage AI-assisted workflows and intelligent agents to accelerate test generation, data creation, failure analysis, and root cause investigation. I'm ISTQB CTFL certified and fluent in English and Portuguese.",
