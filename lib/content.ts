@@ -26,7 +26,7 @@ export const profile = {
   },
   // 2–4 short paragraphs about you, written for international recruiters.
   about: [
-    "I'm a Software Development Engineer in Test (SDET) with 5+ years of experience in QA, including manual and automated testing, who builds quality into modern products end to end. I'm comfortable across the stack and pick the right framework for each problem (Playwright, Cypress, Detox, Appium, REST and contract testing) instead of betting on a single tool.",
+    "I'm a Software Development Engineer in Test (SDET) with 5+ years of experience in QA, including manual and automated testing, who builds quality into modern products end to end. I'm comfortable across the stack and pick the right framework for each problem (Playwright, Cypress, Selenium, Appium, REST and contract testing) instead of betting on a single tool.",
     "My work spans end-to-end, API, and mobile testing, plus performance, accessibility, and security, with active participation throughout the Software Development Lifecycle (SDLC), from test strategy to production validation and monitoring.",
     "I'm polyglot across TypeScript, JavaScript, and Python, and I wire automation into CI/CD (GitHub Actions, Azure DevOps) with Docker, quality gates, and static analysis so feedback stays fast and reliable.",
     "I also leverage AI-assisted workflows and intelligent agents to accelerate test generation, data creation, failure analysis, and root cause investigation. I'm ISTQB CTFL certified and fluent in English and Portuguese.",
@@ -38,7 +38,7 @@ export type Skill = { name: string; items: string[] };
 export const skills: Skill[] = [
   {
     name: "Test Automation & Frameworks",
-    items: ["Framework design", "Playwright", "Cypress", "Detox", "Appium", "TypeScript", "JavaScript", "Python"],
+    items: ["Framework design", "Playwright", "Cypress", "Selenium", "Appium", "TypeScript", "JavaScript", "Python"],
   },
   {
     name: "API & Data",
@@ -89,7 +89,7 @@ export const experience: Experience[] = [
     period: "Sep 2021 to May 2026",
     location: "Full-time, Remote",
     highlights: [
-      "Built and executed automated Web and API tests with Playwright (and Cypress), owning the full quality cycle from test planning to release delivery with a strong focus on user experience.",
+      "Built and executed automated Web and API tests with Playwright + TypeScript and Cypress + JavaScript, owning the full quality cycle from test planning to release delivery with a strong focus on user experience.",
       "Pioneered AI-assisted QA: used generative AI to accelerate test scenarios, data sets, and scripts, and to support log analysis and fault identification, structuring AI agent workflows that cut manual effort and boosted productivity.",
       "Ran functional, non-functional, exploratory, and regression testing across web, iOS, and Android applications.",
       "Active in Scrum and Kanban ceremonies, backlog organization, and bug analysis; tools: Postman, Jira, Git/GitLab/GitHub, DBeaver.",
