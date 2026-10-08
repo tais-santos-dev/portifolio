@@ -90,7 +90,7 @@ export const experience: Experience[] = [
     location: "Full-time, Remote",
     highlights: [
       "Built and executed automated Web and API tests with Playwright + TypeScript and Cypress + JavaScript, owning the full quality cycle from test planning to release delivery with a strong focus on user experience.",
-      "Pioneered AI-assisted QA: used generative AI to accelerate test scenarios, data sets, and scripts, and to support log analysis and fault identification, structuring AI agent workflows that cut manual effort and boosted productivity.",
+      "Designed and built custom AI agents and skills to accelerate test scenario creation, generate test data, and support log analysis and fault identification, cutting manual effort and boosting productivity.",
       "Ran functional, non-functional, exploratory, and regression testing across web, iOS, and Android applications.",
       "Active in Scrum and Kanban ceremonies, backlog organization, and bug analysis; tools: Postman, Jira, Git/GitLab/GitHub, DBeaver.",
     ],
